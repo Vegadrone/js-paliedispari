@@ -14,11 +14,9 @@
 
 
 //RandomNumberGenerator
-function randomNumberGen(min, max){
-    Math.floor(Math.random()* 5 + 1);
+function randomNumberGen(number1, number2){
+   return Math.floor(Math.random()* number1 + number2);
 }
 
-function isEven()
-
-const userOddOrEvenChoice = prompt('scegli pari o dispari');
-const userNumberChioce = parseInt(prompt('scegli un numero da 1 a 5'));
+const AINumber = randomNumberGen(5, 1);
+console.log(AINumber);
