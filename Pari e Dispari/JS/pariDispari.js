@@ -12,4 +12,13 @@
 
 //?################### ESERCIZIO ###################
 
-alert('ok')
+
+//RandomNumberGenerator
+function randomNumberGen(min, max){
+    Math.floor(Math.random()* 5 + 1);
+}
+
+function isEven()
+
+const userOddOrEvenChoice = prompt('scegli pari o dispari');
+const userNumberChioce = parseInt(prompt('scegli un numero da 1 a 5'));

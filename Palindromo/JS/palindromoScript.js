@@ -25,14 +25,14 @@
 
 
 function isPalindrome(word) {
-    let result = 'la parola è palindroma' + " " + true;
+    let result = 'la parola è palindroma';
     //prendo la lunghezza della parola
     const userWordLength = word.length;
     //ciclo for che scorre per tutte le lettere della parola
     for (let i = 0 ; i < userWordLength; i++){
     //ora controlla se la prima lettera e l'ultima sono uguali e continua a verificare fino alla fine
         if (word[i] !== word[userWordLength - 1 - i]){
-            result = 'la parola non è palindroma' + " " + false;
+            result = 'la parola non è palindroma';
         }
     } 
     return result;
