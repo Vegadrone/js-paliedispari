@@ -21,18 +21,27 @@ function randomNumberGen(number1, number2){
 const AINumber = randomNumberGen(5, 1);
 console.log(AINumber);
 
-const userOddOrEvenChoice = prompt('scegli pari o dispari');
-const userNumberChioce = parseInt(prompt('scegli un numero da 1 a 5'));
+const userOddOrEvenChoice = prompt('choose Odd or Even');
+const userNumberChioce = parseInt(prompt('choose a number between 1 and 5'));
 
 let sum = AINumber + userNumberChioce;
+console.log('SUM OF YOUR NUMBER AND AI NUMBER' + ' ' + sum);
 
 function isEven(totalNumber){
-    let result = 'Numero Pari';
+    let result = 'Even Number';
     if (totalNumber % 2 !== 0){
-        return result = 'Numero Dispari';
+        return result = 'Odd Number';
     }
     return result
 }
 
 const checkOddOrEven = isEven(sum);
 console.log(checkOddOrEven);
+
+let message = 'YOU LOSE';
+
+if (((userOddOrEvenChoice === 'even') && (checkOddOrEven % 2 == 0)) || ((userOddOrEvenChoice === 'odd') && (checkOddOrEven % 2 !== 0))) {
+  message = 'YOU WIN';
+}
+
+console.log(message)
