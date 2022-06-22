@@ -38,10 +38,11 @@ function isEven(totalNumber){
 const checkOddOrEven = isEven(sum);
 console.log(checkOddOrEven);
 
-let message = 'YOU LOSE';
-
 if (((userOddOrEvenChoice === 'even') && (sum % 2 == 0)) || ((userOddOrEvenChoice === 'odd') && (sum % 2 !== 0))) {
-  message = 'YOU WIN';
+    alert('YOU WIN');
+   
+} else {
+    alert('YOU LOSE');
 }
 
-console.log(message)
+
