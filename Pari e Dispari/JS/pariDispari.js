@@ -20,3 +20,19 @@ function randomNumberGen(number1, number2){
 
 const AINumber = randomNumberGen(5, 1);
 console.log(AINumber);
+
+const userOddOrEvenChoice = prompt('scegli pari o dispari');
+const userNumberChioce = parseInt(prompt('scegli un numero da 1 a 5'));
+
+let sum = AINumber + userNumberChioce;
+
+function isEven(totalNumber){
+    let result = 'Numero Pari';
+    if (totalNumber % 2 !== 0){
+        return result = 'Numero Dispari';
+    }
+    return result
+}
+
+const checkOddOrEven = isEven(sum);
+console.log(checkOddOrEven);
