@@ -19,10 +19,13 @@ function randomNumberGen(number1, number2){
 }
 
 const AINumber = randomNumberGen(5, 1);
-console.log(AINumber);
+console.log('AI Number is' + ' ' + AINumber);
 
 const userOddOrEvenChoice = prompt('choose Odd or Even');
+console.log('User Choice is' + ' ' + userOddOrEvenChoice);
+
 const userNumberChioce = parseInt(prompt('choose a number between 1 and 5'));
+console.log('User Number is' + ' ' + userNumberChioce);
 
 let sum = AINumber + userNumberChioce;
 console.log('SUM OF YOUR NUMBER AND AI NUMBER' + ' ' + sum);
