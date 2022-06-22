@@ -23,28 +23,30 @@
 // l'altra metà partendo però dalla fine usando un for.
 
 
-function isPalindrome (userWord) {
+
+function isPalindrome(word) {
+    let result = 'la parola è palindroma' + " " + true;
     //prendo la lunghezza della parola
-    const userWordLength = userWord.length;
-    //ciclo for fino a metà della parola
-    for (let i = 0 ; i < userWordLength / 2; i++){
-    //ora controlla se la prima e la seconda parte sono le stesse
-    //
-        if (userWord[i] !== userWord[userWordLength - 1 - i]){
-            return 'La parola non è palindroma';
-        } else {
-            return 'La parola è palindroma';
+    const userWordLength = word.length;
+    //ciclo for che scorre per tutte le lettere della parola
+    for (let i = 0 ; i < userWordLength; i++){
+    //ora controlla se la prima lettera e l'ultima sono uguali e continua a verificare fino alla fine
+        if (word[i] !== word[userWordLength - 1 - i]){
+            result = 'la parola non è palindroma' + " " + false;
         }
-    }   
+    } 
+    return result;
 }
 
 //prendiamo l'input
 
 const userWord = prompt('inserisci una parola');
 
-//invochaimo la funzione 
+//invochaimo la funzione salvandola in una variabile
 
-isPalindrome ()
-console.log (isPalindrome)
+const userWordCheck = isPalindrome(userWord);
 
+//facciamo un console log
+
+alert(userWordCheck);
 
