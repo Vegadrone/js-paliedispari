@@ -40,7 +40,7 @@ console.log(checkOddOrEven);
 
 let message = 'YOU LOSE';
 
-if (((userOddOrEvenChoice === 'even') && (checkOddOrEven % 2 == 0)) || ((userOddOrEvenChoice === 'odd') && (checkOddOrEven % 2 !== 0))) {
+if (((userOddOrEvenChoice === 'even') && (sum % 2 == 0)) || ((userOddOrEvenChoice === 'odd') && (sum % 2 !== 0))) {
   message = 'YOU WIN';
 }
 
